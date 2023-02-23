@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script
+      src="https://kit.fontawesome.com/8b2919a184.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script
+      src="https://kit.fontawesome.com/70657c6fc0.js"
+      crossorigin="anonymous"
+    ></script> -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    <main>
+      <div id="list-title">
+        <h3>Today's To Do</h3>
+        <a class="refreshBtn"><i class="fa-solid fa-arrows-rotate"></i></a>
+      </div>
+      <form id="input-form">
+        <input
+          placeholder="Add to your list..."
+          id="input-task"
+          class="add-list"
+        />
+        <button type="submit"><span class="arrow">&#8617;</span></button>
+      </form>
+
+      <div id="do-list" class="list-items"></div>
+      <p id="message"></p>
+
+      <div class="clear-all">
+        <button type="button" id="clear" class="clearBtn">
+          Clear all completed.
+        </button>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script
+      src="https://kit.fontawesome.com/70657c6fc0.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <title>To-Do List</title>
+  <script defer src="bundle.js"></script></head>
+  <body>
+    <section>
+      <div id="list-title">
+        <h1>Today's To Do</h1>
+        <button><i class="fa-solid fa-arrows-rotate"></i></button>
+      </div>
+      <form id="input-form">
+        <input
+          placeholder="Add to your list..."
+          id="input-task"
+          class="add-list"
+        />
+        <button type="submit"><span class="arrow">&#8617;</span></button>
+      </form>
+
+      <div id="do-list" class="list-items"></div>
+      <p id="message"></p>
+
+      <div class="clear-all">
+        <a href="#" id="clear">Clear all completed.</a>
+      </div>
+    </section>
+  </body>
+</html>
