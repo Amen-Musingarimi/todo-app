@@ -61,32 +61,28 @@ displayContainer.addEventListener('click', (e) => {
   }
 });
 
-// Edit task
-function editTask(item, array) {
+//Delete function
+function editTask(item) {
   item.addEventListener('focusout', () => {
-    array.forEach((task) => {
-      if (task.index === item.id) {
-        task.description = item.value;
-        localStorage.setItem('array', JSON.stringify(array));
-      }
-    });
+    const array = JSON.parse(localStorage.getItem('array')) || [];
+    array[item.id - 1].description = item.value;
+    localStorage.setItem('array', JSON.stringify(array));
+    printTasks();
   });
+
   item.addEventListener('keyup', (e) => {
     if (e.key === 'Enter') {
-      array.forEach((task) => {
-        if (task.index === item.id) {
-          task.description = item.value;
-          localStorage.setItem('array', JSON.stringify(array));
-        }
-      });
+      const array = JSON.parse(localStorage.getItem('array')) || [];
+      array[item.id - 1].description = item.value;
+      localStorage.setItem('array', JSON.stringify(array));
+      printTasks();
     }
   });
 }
 
-const array = JSON.parse(localStorage.getItem('array')) || [];
 displayContainer.addEventListener('click', (e) => {
   if (e.target.classList.contains('task-list')) {
-    editTask(e.target, array);
+    editTask(e.target);
   }
 });
 
@@ -98,3 +94,4 @@ clearCompletedTasks();
 
 // Calling the display function
 printTasks();
+
