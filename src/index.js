@@ -2,6 +2,7 @@ import './styles/main.css';
 import Tasks from './modules/task.js';
 import clearCompletedTasks from './modules/delete.js';
 import updateTaskStatus from './modules/status.js';
+import editTask from './modules/editToDo.js';
 
 const displayContainer = document.getElementById('do-list');
 
@@ -61,25 +62,7 @@ displayContainer.addEventListener('click', (e) => {
   }
 });
 
-// Delete function
-function editTask(item) {
-  item.addEventListener('focusout', () => {
-    const array = JSON.parse(localStorage.getItem('array')) || [];
-    array[item.id - 1].description = item.value;
-    localStorage.setItem('array', JSON.stringify(array));
-    printTasks();
-  });
-
-  item.addEventListener('keyup', (e) => {
-    if (e.key === 'Enter') {
-      const array = JSON.parse(localStorage.getItem('array')) || [];
-      array[item.id - 1].description = item.value;
-      localStorage.setItem('array', JSON.stringify(array));
-      printTasks();
-    }
-  });
-}
-
+// Edit function
 displayContainer.addEventListener('click', (e) => {
   if (e.target.classList.contains('task-list')) {
     editTask(e.target);
