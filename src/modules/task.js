@@ -36,40 +36,4 @@ export default class Tasks {
       }
     });
   }
-
-  // Edit task
-  // editTask(description, index) {
-  //   this.description = description;
-  //   this.index = index;
-  //   description.addEventListener('keypress', (e) => {
-  //     if(e.key === 'Enter') {
-  //       console.log('En');
-  //     }
-  //   })
-  //   item.addEventListener('focusout', () => {
-  //     array.forEach((task) => {
-  //       if (task.index === item.id) {
-  //         task.description = item.value;
-  //         localStorage.setItem('array', JSON.stringify(array));
-  //       }
-  //     });
-  //   });
-  //   item.addEventListener('keyup', (e) => {
-  //     if (e.key === 'Enter') {
-  //       array.forEach((task) => {
-  //         if (task.index === item.id) {
-  //           task.description = item.value;
-  //           localStorage.setItem('array', JSON.stringify(array));
-  //         }
-  //       });
-  //     }
-  //   });
-  // }
-
-  // const array = JSON.parse(localStorage.getItem('array')) || [];
-  // displayContainer.addEventListener('click', (e) => {
-  //   if (e.target.classList.contains('task-list')) {
-  //     editTask(e.target, array);
-  //   }
-  // });
 }

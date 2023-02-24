@@ -61,7 +61,7 @@ displayContainer.addEventListener('click', (e) => {
   }
 });
 
-//Delete function
+// Delete function
 function editTask(item) {
   item.addEventListener('focusout', () => {
     const array = JSON.parse(localStorage.getItem('array')) || [];
@@ -94,4 +94,3 @@ clearCompletedTasks();
 
 // Calling the display function
 printTasks();
-
