@@ -57,6 +57,12 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link](https://amen-musingarimi.github.io/todo-app/dist/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
@@ -121,3 +127,4 @@ I would like to thank [Minimalist](https://web.archive.org), for the original [d
 This project is [MIT](LICENSE.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+https://amen-musingarimi.github.io/todo-app/dist/
