@@ -10,8 +10,6 @@ class Tasks {
   addTask(description) {
     this.description = description;
     if (description === '') {
-      // document.getElementById('message').innerHTML = '';
-      // message.style.color = 'red';
       return;
     } else {
       const array = JSON.parse(localStorage.getItem('array')) || [];

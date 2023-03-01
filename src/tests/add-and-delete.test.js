@@ -1,4 +1,4 @@
-const Tasks = require('../modules/task');
+const Tasks = require('../modules/task.js');
 
 beforeEach(() => {
   localStorage.clear();
@@ -19,6 +19,19 @@ describe('Test add and delete functions', () => {
     expect(difference).toBe(1);
   });
   it('Should delete a task', () => {
+    localStorage.setItem('array', JSON.stringify([]));
+    const taskList = new Tasks();
+    taskList.addTask('New Task');
+    taskList.addTask('Another Task');
+    taskList.addTask('Task 3');
 
+    const oldLength = JSON.parse(localStorage.getItem('array')).length;
+
+    taskList.removeTask(2);
+
+    const newLength = JSON.parse(localStorage.getItem('array')).length;
+
+    const difference = oldLength - newLength;
+    expect(difference).toBe(1);
   });
 });
