@@ -1,6 +1,6 @@
 /* eslint-disable */
 const array = [];
-export default class Tasks {
+class Tasks {
   constructor(description) {
     this.description = description;
     this.index = array.length + 1;
@@ -10,8 +10,7 @@ export default class Tasks {
   addTask(description) {
     this.description = description;
     if (description === '') {
-      document.getElementById('message').innerHTML = '';
-      message.style.color = 'red';
+      return;
     } else {
       const array = JSON.parse(localStorage.getItem('array')) || [];
       const newBook = new Tasks(description);
@@ -37,3 +36,5 @@ export default class Tasks {
     });
   }
 }
+
+module.exports = Tasks;
