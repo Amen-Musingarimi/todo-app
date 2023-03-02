@@ -11,7 +11,6 @@ beforeEach(() => {
 
 describe('Update task completed status', () => {
   it('Should mark a task as completed', () => {
-
     // Setup Document
     document.body.innerHTML = `
     <main>
@@ -54,10 +53,12 @@ describe('Update task completed status', () => {
 
     // Update DOM task list and setup check input event handlers
     printTasks();
-    document.dispatchEvent(new Event("DOMContentLoaded", {
-      bubbles: false,
-      cancelable: true
-    }));
+    document.dispatchEvent(
+      new Event('DOMContentLoaded', {
+        bubbles: false,
+        cancelable: true,
+      }),
+    );
 
     // Mark the first two tasks as completed
     const inputChecks = document.querySelectorAll('.check');
