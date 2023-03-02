@@ -37,7 +37,7 @@ beforeEach(() => {
   `;
 });
 
-describe('Update task completed status', () => {
+describe('Task Tests', () => {
   it('Should mark a task as completed', () => {
     // Setup localStorage
     localStorage.setItem('array', JSON.stringify([]));
