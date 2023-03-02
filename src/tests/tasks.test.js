@@ -102,6 +102,7 @@ describe('Task Tests', () => {
     localStorage.setItem('array', JSON.stringify([]));
 
     // Import required functions
+    // eslint-disable-next-line
     const printTasks = require('../index.js').default;
     // eslint-disable-next-line
     const clearCompletedTasks = require('../modules/delete.js').default;
