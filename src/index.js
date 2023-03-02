@@ -77,3 +77,5 @@ clearCompletedTasks();
 
 // Calling the display function
 printTasks();
+
+export default printTasks;
