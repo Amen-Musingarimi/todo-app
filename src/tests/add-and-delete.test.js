@@ -1,4 +1,4 @@
-const Tasks = require('../modules/task.js');
+import Tasks from '../modules/task.js';
 
 beforeEach(() => {
   localStorage.clear();
