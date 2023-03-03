@@ -14,4 +14,4 @@ function editTask(item) {
   });
 }
 
-module.exports = editTask;
+export default editTask;

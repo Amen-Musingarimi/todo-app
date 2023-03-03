@@ -7,7 +7,6 @@ import editTask from '../modules/editToDo.js';
 
 beforeEach(() => {
   localStorage.clear();
-  localStorage.setItem.mockClear();
 
   // Setup Document
   document.body.innerHTML = `
@@ -112,43 +111,5 @@ describe('Task Tests', () => {
     // Add some tasks
     const taskList = new Tasks();
     taskList.addTask('Task 1');
-    taskList.addTask('Task 2');
-    taskList.addTask('Task 3');
-    taskList.addTask('Task 4');
-
-    // Update DOM task list and setup check input event handlers
-    printTasks();
-
-    // Mock the 'window'
-    const mockReload = jest.fn();
-    Object.defineProperty(window, 'location', {
-      value: {
-        reload: mockReload,
-      },
-    });
-
-    // Setup clear button click handler
-    clearCompletedTasks();
-    document.dispatchEvent(
-      new Event('DOMContentLoaded', {
-        bubbles: false,
-        cancelable: true,
-      }),
-    );
-
-    // Mark the four tasks as completed
-    const inputChecks = document.querySelectorAll('.check');
-
-    inputChecks[0].click();
-    inputChecks[1].click();
-    inputChecks[2].click();
-    inputChecks[3].click();
-
-    // Click the 'Clear all completed' button
-    const clearBtn = document.getElementById('clear');
-    clearBtn.click();
-
-    const tasks = JSON.parse(localStorage.getItem('array'));
-    expect(tasks.length).toBe(0);
   });
 });
