@@ -38,13 +38,13 @@ beforeEach(() => {
 });
 
 describe('Task Tests', () => {
-  it('Should mark a task as completed', () => {
+  it('Should mark a task as completed', async () => {
     // Setup localStorage
     localStorage.setItem('array', JSON.stringify([]));
 
     // Import required functions
-    // eslint-disable-next-line
-    const printTasks = require('../index.js').default;
+    let printTasks = await import('../index.js');
+    printTasks = printTasks.default;
 
     // Add some tasks
     const taskList = new Tasks();
@@ -97,15 +97,17 @@ describe('Task Tests', () => {
     expect(updatedTask.description).toEqual('new description');
   });
 
-  it('Should clear all completed tasks', () => {
+  it('Should clear all completed tasks', async () => {
     // Setup localStorage
     localStorage.setItem('array', JSON.stringify([]));
 
     // Import required functions
-    // eslint-disable-next-line
-    const printTasks = require('../index.js').default;
-    // eslint-disable-next-line
-    const clearCompletedTasks = require('../modules/delete.js').default;
+
+    let printTasks = await import('../index.js');
+    printTasks = printTasks.default;
+
+    let clearCompletedTasks = await import('../modules/delete.js');
+    clearCompletedTasks = clearCompletedTasks.default;
 
     // Add some tasks
     const taskList = new Tasks();
