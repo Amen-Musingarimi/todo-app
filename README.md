@@ -1,21 +1,21 @@
 # 📗 Table of Contents
 
-- [📖 About the Project](#about-to-do-list-app)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-- [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-  - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
-- [👥 Authors](#amen-musingarimi)
-- [🔭 Future Features](#the other pages)
-- [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#microverse)
-- [❓ FAQ (OPTIONAL)](#faq)
-- [📝 License](#license)
+- [📗 Table of Contents](#-table-of-contents)
+- [📖 \[To-Do-List\] ](#-to-do-list-)
+  - [🛠 Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
+    - [Key Features ](#key-features-)
+  - [🚀 Live Demo ](#-live-demo-)
+  - [💻 Getting Started ](#-getting-started-)
+    - [Setup](#setup)
+    - [Run tests](#run-tests)
+    - [Deployment](#deployment)
+  - [👥 Authors ](#-authors-)
+  - [🔭 Future Features ](#-future-features-)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [📝 License ](#-license-)
 
 <!-- PROJECT DESCRIPTION -->
 
@@ -91,6 +91,19 @@ You can deploy this project using Github pages.
 
 - GitHub: [@Amen-Musingarimi](https://github.com/Amen-Musingarimi)
 - LinkedIn: [@atmusingarimi](https://www.linkedin.com/in/atmusingarimi/)
+
+👤 **Precious Betine**
+
+- GitHub: [@Precious Betine](https://github.com/preciousbetine)
+- LinkedIn: [@Precious Betine](https://www.linkedin.com/in/preciousbetine)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- [ ] **[Reordering_a_selected_item(todo)_as_drag_and_drop]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
