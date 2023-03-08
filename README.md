@@ -1,21 +1,20 @@
 # 📗 Table of Contents
 
-- [📖 About the Project](#about-to-do-list-app)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-- [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-  - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
-- [👥 Authors](#amen-musingarimi)
-- [🔭 Future Features](#the other pages)
-- [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#microverse)
-- [❓ FAQ (OPTIONAL)](#faq)
-- [📝 License](#license)
+- [📗 Table of Contents](#-table-of-contents)
+- [📖 \[To-Do-List\] ](#-to-do-list-)
+  - [🛠 Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
+    - [Key Features ](#key-features-)
+  - [🚀 Live Demo ](#-live-demo-)
+  - [💻 Getting Started ](#-getting-started-)
+    - [Setup](#setup)
+    - [Run tests](#run-tests)
+    - [Deployment](#deployment)
+  - [👥 Authors ](#-authors-)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [📝 License ](#-license-)
 
 <!-- PROJECT DESCRIPTION -->
 
@@ -71,11 +70,11 @@ To get a local copy up and running, follow these steps.
 
 ### Setup
 
-Clone this repository to your desired folder using the following command; git clone https://github.com/Amen-Musingarimi/to-do-app.git
+Clone this repository to your desired folder using the following command; git clone https://github.com/Amen-Musingarimi/todo-app
 
 ### Run tests
 
-To run tests, run the following command: npx hint . and npx stylelint "\*_/_.{css,scss}" and npx eslint .
+To run tests, run the following command: npx hint . and npx stylelint "\*_/_.{css,scss}" and npx eslint . and npm run build and npm run dev
 
 ### Deployment
 
@@ -100,7 +99,7 @@ You can deploy this project using Github pages.
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Amen-Musingarimi/to-do-app/issues).
+Feel free to check the [issues page](https://github.com/Amen-Musingarimi/todo-app/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -127,4 +126,3 @@ I would like to thank [Minimalist](https://web.archive.org), for the original [d
 This project is [MIT](LICENSE.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-https://amen-musingarimi.github.io/todo-app/dist/
